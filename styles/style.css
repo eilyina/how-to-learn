@@ -13,7 +13,7 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: #f2f2f2 ;
+  background-color: #f2f2f2;
   position: relative;
   display: flex;
   align-items: center;
@@ -106,16 +106,14 @@
   font-weight: normal;
   display:flex;
   flex-direction: column;
-  gap: 30px
+  gap: 30px;
 }
 .two-columns_paragraph{
-  margin: auto; /*или заменить на 0?*/
+  margin: auto;
 }
 span{
   font-weight: bold;
 }
-
-/* и элемента с модификатором вида ключ-значение */
 
 .digits{
   position: relative;
