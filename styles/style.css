@@ -21,10 +21,10 @@
 }
 
 .header__title{
-  font-size: 120px;
+  font-size: 102px;
   font-weight: 600;
   line-height: 96px;
-  width: 730px;
+  max-width: 730px;
   z-index: 2;
   padding: 64px;
 }
@@ -32,11 +32,11 @@
 
   height: 32px;
   width: 228px;
-  box-sizing: cover;
+
 
 }
 
-.logo__place_header{
+.logo_place_header{
   position: absolute;
   top:30px;
   left:64px;
@@ -47,7 +47,7 @@
   position: absolute;
   bottom:30px;
   left:64px;
-  width: 338px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -60,13 +60,12 @@
   width: 568px;
   background-color: #2f80ed;
   position: absolute;
-  top:30px;
+  top: 64px;
   right:0;
   z-index: 0;
 }
 .header__main-illustration{
-  background-image: url("../images/header-image.png");
-  background-size:cover;
+  object-fit:fill;
   height: 608px;
   width: 765px;
   position: absolute;
@@ -82,15 +81,14 @@
   min-width: 784px;
   width: 80%;
   display:flex;
-
   align-content: space-between;
   justify-content: space-between;
   padding: 100px 0 0 0;
 
 }
 
-.two-columns_brief{
-  width: 175px;
+.two-columns__brief{
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -99,7 +97,7 @@
   padding: 0;
 }
 
-.two-columns_main-text{
+.two-columns__main-text{
   width: 80%;
   line-height: 34px;
   font-size: 24px;
@@ -108,10 +106,10 @@
   flex-direction: column;
   gap: 30px;
 }
-.two-columns_paragraph{
+.two-columns__paragraph{
   margin: auto;
 }
-span{
+.two-columns__span-accent{
   font-weight: bold;
 }
 
@@ -123,7 +121,7 @@ span{
   align-items: center;
   padding: 100px 0 100px 0;
 }
-.section_title{
+.section-title{
   width: 60%;
   line-height: 1.15;
   font-size: 60px;
@@ -133,7 +131,7 @@ span{
   margin: 0;
   z-index: 1;
 }
-.section_subtitle{
+.section-subtitle{
   width: 60%;
   line-height: 34px;
   font-size: 24px;
@@ -159,28 +157,28 @@ span{
   flex-direction: column;
   row-gap: 20px;
   justify-content: start;
+  padding: 0;
+  margin: 0;
 }
-.table_heading{
+.table__heading{
 
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  padding: 0;
-  margin: 0;
   z-index: 1;
+  margin: 0;
 }
-.table_text{
+.table__text{
 
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  padding: 0;
-  margin: 0;
   z-index: 1;
+  margin: 0;
 }
 .feynman{
-  height: 890px;
-
+  min-height: 890px;
+  padding: 100px 0 0 0;
   position: relative;
   background-image: url("../images/feynman.png");
   background-size: 867px 637px;
@@ -191,8 +189,8 @@ span{
 
 }
 .feynman__title{
-  margin: 100px auto 0;
-  width: 648px;
+  margin: 0 auto;
+  max-width: 648px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -215,7 +213,7 @@ span{
   line-height:51px;
   font-size: 36px;
   font-weight: normal;
-  color:#2f80ed;
+  text-decoration: none;
 
 }
 .kaufman{
@@ -225,16 +223,16 @@ span{
   justify-content: center;
   align-items: center;
   padding: 90px 0;
-  background-color: black;
+  background-color: #1f1f1f;
   overflow: hidden;
 
 }
 
-.section_title_theme_dark{
+.section-title_theme_dark{
   color: #f2f2f2;
 
 }
-.section_subtitle_theme_dark{
+.section-subtitle_theme_dark{
   color: #f2f2f2;
 
 }
@@ -245,18 +243,18 @@ span{
 .table__cell_theme_dark{
   width: 200px;
 }
-.table_heading_theme_dark{
+.table__heading_theme_dark{
   color: white;
 }
-.table_text_theme_dark{
+.table__text_theme_dark{
   color: white;
 }
 
-.kaufman_triangle{
+.kaufman__triangle{
 height: 877px;
 width: 877px;
 position: absolute;
-right:-200px;
+right:-210px;
 top:0;
 background-image: url("../images/kaufman-triangle.svg");
 z-index: 0;
@@ -265,7 +263,7 @@ background-size: cover;
 .footer{
   display: flex;
   min-height: 350px;
-  background-color: black;
+  background-color:#1f1f1f;
   color: white;
   padding: 0;
   margin: 0;
@@ -274,7 +272,6 @@ background-size: cover;
   display: flex;
   width: 90%;
   margin: 60px auto 40px auto;
-  padding:0;
   justify-content: space-between;
 
 }
@@ -284,14 +281,13 @@ background-size: cover;
   justify-content: space-between;
   flex-basis: 711px;
 }
-.logo__place_footer{
+.logo_place_footer{
   background-image: url("../images/logo_place_footer.svg");
   z-index: 0;
 
 }
 .footer__author{
   margin: 18px 0 18px 0;
-  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
