@@ -1,4 +1,10 @@
+.link-transform{
+  opacity: 1;
+  transition: opacity 0.3s linear;
+
+  }
+
+
 .link-transform:hover{
   opacity: 0.5;
-  transition: opacity 1s linear 0.5s;
   }
